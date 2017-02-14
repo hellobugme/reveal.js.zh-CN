@@ -6,11 +6,11 @@ Translate By [hellobugme](https://github.com/hellobugme/reveal.js.zh-CN).
 
 reveal.js 的主要特性：
 
-+ [通过标签划分幻灯片](https://github.com/hakimel/reveal.js#markup)
-+ [支持 Markdown 编写内容](https://github.com/hakimel/reveal.js#markdown)
-+ [支持 PDF 导出](https://github.com/hakimel/reveal.js#pdf-export)
-+ [支持演讲备注](https://github.com/hakimel/reveal.js#speaker-notes)
-+ [提供 JavaScript API](https://github.com/hakimel/reveal.js#api)
++ [通过标签划分幻灯片](https://github.com/hellobugme/reveal.js.zh-CN#标记)
++ [支持 Markdown 编写内容](https://github.com/hellobugme/reveal.js.zh-CN#markdown)
++ [支持 PDF 导出](https://github.com/hellobugme/reveal.js.zh-CN#导出 PDF)
++ [支持演讲备注](https://github.com/hellobugme/reveal.js.zh-CN#演讲备注)
++ [提供 JavaScript API](https://github.com/hellobugme/reveal.js.zh-CN#api)
 
 可视化编辑器和演示文稿分享平台： [slides.com](https://slides.com?ref=github)。
 
@@ -63,10 +63,10 @@ reveal.js 的主要特性：
 - [许可](#许可)
 
 #### 更多
-- [更新日志](https://github.com/hakimel/reveal.js/releases)
-- [示例](https://github.com/hakimel/reveal.js/wiki/Example-Presentations)
-- [浏览器支持](https://github.com/hakimel/reveal.js/wiki/Browser-Support)
-- [插件](https://github.com/hakimel/reveal.js/wiki/Plugins,-Tools-and-Hardware)
+- [更新日志](https://github.com/hellobugme/reveal.js.zh-CN/releases)
+- [示例](https://github.com/hellobugme/reveal.js.zh-CN/wiki/Example-Presentations)
+- [浏览器支持](https://github.com/hellobugme/reveal.js.zh-CN/wiki/Browser-Support)
+- [插件](https://github.com/hellobugme/reveal.js.zh-CN/wiki/Plugins,-Tools-and-Hardware)
 
 ## 在线编辑器
 
@@ -545,7 +545,7 @@ Reveal.isAutoSliding();
 
 幻灯片切换时会广播 'slidechanged' 事件。event 对象保存了当前幻灯片的横向索引和纵向索引、上一张幻灯片和当前幻灯片的节点引用。
 
-部分第三方库，如 MathJax（见 [#226](https://github.com/hakimel/reveal.js/issues/226#issuecomment-10261609)），会受到幻灯片变形和显示状态的影响，此时可以尝试在该事件的回调函数中重新计算和渲染来进行修复。
+部分第三方库，如 MathJax（见 [#226](https://github.com/hellobugme/reveal.js.zh-CN/issues/226#issuecomment-10261609)），会受到幻灯片变形和显示状态的影响，此时可以尝试在该事件的回调函数中重新计算和渲染来进行修复。
 
 ```javascript
 Reveal.addEventListener( 'slidechanged', function( event ) {
@@ -938,7 +938,7 @@ Reveal.initialize({
 
 导出的 PDF 尺寸由 [演示文稿尺寸](#演示文稿尺寸) 决定，如果幻灯片太高无法一页展示完，则会切分为多页，可通过 `pdfMaxPagesPerSlide` 配置项设置每张幻灯片可被切分的最大页数，如 `Reveal.configure({ pdfMaxPagesPerSlide: 1 })` 可确保幻灯片不会被切分。
 
-1. 给演示文稿的 URL 加上 `print-pdf` 参数，如：http://localhost:8000/?print-pdf#/，页面会自动加载导出 PDF 所需的样式 ([css/print/pdf.css](https://github.com/hakimel/reveal.js/blob/master/css/print/pdf.css))。
+1. 给演示文稿的 URL 加上 `print-pdf` 参数，如：http://localhost:8000/?print-pdf#/，页面会自动加载导出 PDF 所需的样式 ([css/print/pdf.css](https://github.com/hellobugme/reveal.js.zh-CN/blob/master/css/print/pdf.css))。
 可以尝试这个例子 [lab.hakim.se/reveal-js?print-pdf](http://lab.hakim.se/reveal-js?print-pdf)。
 2. 打开浏览器的打印面板 (CTRL/CMD+P)。
 3. **Destination（目标打印机）** 修改为 **Save as PDF（另存为 PDF）**。
@@ -971,7 +971,7 @@ Reveal.initialize({
 <link rel="stylesheet" href="css/theme/black.css" id="theme">
 ```
 
-如果要增加自定义主题，请参考：[/css/theme/README.md](https://github.com/hakimel/reveal.js/blob/master/css/theme/README.md)。
+如果要增加自定义主题，请参考：[/css/theme/README.md](https://github.com/hellobugme/reveal.js.zh-CN/blob/master/css/theme/README.md)。
 
 
 ## 演讲备注
@@ -1015,7 +1015,7 @@ Note:
 
 备注只对演讲者可见，如果想让其他人也能看到，可以在初始化 reveal.js 时，把 `showNotes` 配置项设为 `true`，则备注会显示在演示文稿的底部。
 
-如果启用了 `showNotes`，在 [导出 PDF](https://github.com/hakimel/reveal.js#pdf-export) 时也会包含备注。
+如果启用了 `showNotes`，在 [导出 PDF](https://github.com/hellobugme/reveal.js.zh-CN#pdf-export) 时也会包含备注。
 备注默认打印在一个半透明的浮窗中，覆盖于幻灯片底部，如果想在该幻灯片后面单独新建一页打印备注，可以把 `showNotes` 设置为 `"separate-page"`。
 
 ## 服务器端演讲备注
@@ -1217,7 +1217,7 @@ Reveal.initialize({
 
 reveal.js 基础功能的安装十分简单，只需下载框架包，然后直接在浏览器中打开 index.html 文件即可。
 
-1. 在 <https://github.com/hakimel/reveal.js/releases> 上下载 reveal.js 的最新版本
+1. 在 <https://github.com/hellobugme/reveal.js.zh-CN/releases> 上下载 reveal.js 的最新版本
 
 2. 解压缩，然后将 index.html 里的示例内容修改为自己的内容
 
@@ -1233,7 +1233,7 @@ reveal.js 基础功能的安装十分简单，只需下载框架包，然后直�
 
 1. 克隆 reveal.js 仓库
    ```sh
-   $ git clone https://github.com/hakimel/reveal.js.git
+   $ git clone https://github.com/hellobugme/reveal.js.zh-CN.git
    ```
 
 1. 进入 reveal.js 目录
