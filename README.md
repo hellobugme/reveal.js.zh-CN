@@ -6,11 +6,11 @@ Translate from [hakimel/reveal.js](https://github.com/hakimel/reveal.js) by [hel
 
 reveal.js 的主要特性：
 
-+ [通过标签划分幻灯片](https://github.com/hellobugme/reveal.js.zh-CN#标记)
-+ [支持 Markdown 编写内容](https://github.com/hellobugme/reveal.js.zh-CN#markdown)
-+ [支持 PDF 导出](https://github.com/hellobugme/reveal.js.zh-CN#导出-pdf)
-+ [支持演讲备注](https://github.com/hellobugme/reveal.js.zh-CN#演讲备注)
-+ [提供 JavaScript API](https://github.com/hellobugme/reveal.js.zh-CN#api)
++ [通过标签划分幻灯片](#标记)
++ [支持 Markdown 编写内容](#markdown)
++ [支持 PDF 导出](#导出-pdf)
++ [支持演讲备注](#演讲备注)
++ [提供 JavaScript API](#api)
 
 可视化编辑器和演示文稿分享平台： [slides.com](https://slides.com?ref=github)。
 
@@ -1015,7 +1015,7 @@ Note:
 
 备注只对演讲者可见，如果想让其他人也能看到，可以在初始化 reveal.js 时，把 `showNotes` 配置项设为 `true`，则备注会显示在演示文稿的底部。
 
-如果启用了 `showNotes`，在 [导出 PDF](https://github.com/hellobugme/reveal.js.zh-CN#pdf-export) 时也会包含备注。
+如果启用了 `showNotes`，在 [导出 PDF](#pdf-export) 时也会包含备注。
 备注默认打印在一个半透明的浮窗中，覆盖于幻灯片底部，如果想在该幻灯片后面单独新建一页打印备注，可以把 `showNotes` 设置为 `"separate-page"`。
 
 ## 服务器端演讲备注
