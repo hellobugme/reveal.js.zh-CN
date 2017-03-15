@@ -1151,7 +1151,9 @@ Reveal.initialize({
 
 ##### socket.io 服务器作为静态文件服务器
 
-socket.io 服务器也可以作为存放客户端演示文稿的静态文件服务器（ **译者注：** 指运行 socket.io 的环境里的 index.html）。
+socket.io 服务器也可以作为存放客户端演示文稿的静态文件服务器。
+
+**译者注：** 指运行 socket.io 的环境里的 index.html。
 
 配置示例：
 ```javascript
@@ -1175,7 +1177,11 @@ Reveal.initialize({
 });
 ```
 
-socket.io 服务器甚至可以作为同时存放主演示文稿和客户端演示文稿的静态文件服务器（如果你不想使用演讲备注的话）（ **译者注：** 因为需要运行 socket.io 环境，不能同时执行 ```node plugin/multiplex``` 和 ```node plugin/notes-server``` 命令）。这可能不是你想要的，因为你肯定不希望听众操作了演示文稿而干扰到你的演讲。
+socket.io 服务器甚至可以作为同时存放主演示文稿和客户端演示文稿的静态文件服务器（如果你不想使用演讲备注的话）。
+
+**译者注：** 因为需要运行 socket.io 环境，不能同时执行 ```node plugin/multiplex``` 和 ```node plugin/notes-server``` 命令。
+
+这可能不是你想要的，因为你肯定不希望听众操作了演示文稿而干扰到你的演讲。
 
 配置示例：
 ```javascript
