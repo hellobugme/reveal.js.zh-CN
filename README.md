@@ -8,7 +8,7 @@ reveal.js 的主要特性：
 
 + [通过标签划分幻灯片](https://github.com/hellobugme/reveal.js.zh-CN#标记)
 + [支持 Markdown 编写内容](https://github.com/hellobugme/reveal.js.zh-CN#markdown)
-+ [支持 PDF 导出](https://github.com/hellobugme/reveal.js.zh-CN#导出 PDF)
++ [支持 PDF 导出](https://github.com/hellobugme/reveal.js.zh-CN#导出-PDF)
 + [支持演讲备注](https://github.com/hellobugme/reveal.js.zh-CN#演讲备注)
 + [提供 JavaScript API](https://github.com/hellobugme/reveal.js.zh-CN#api)
 
@@ -46,7 +46,7 @@ reveal.js 的主要特性：
   - [嵌入媒体](#嵌入媒体)
   - [拉伸元素](#拉伸元素)
   - [发送消息 API](#发送消息)
-- [导出 PDF](#导出 PDF)
+- [导出 PDF](#导出-PDF)
 - [主题](#主题)
 - [演讲备注](#演讲备注)
   - [分享和打印演讲备注](#分享和打印演讲备注)
@@ -54,7 +54,7 @@ reveal.js 的主要特性：
 - [多路复用](#多路复用)
   - [主演示文稿](#主演示文稿)
   - [客户端演示文稿](#客户端演示文稿)
-  - [Socket.io 服务器](#socketio 服务器)
+  - [Socket.io 服务器](#socket.io-服务器)
 - [MathJax](#mathjax)
 - [安装](#安装)
   - [基础安装](#基础安装)
