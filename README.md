@@ -950,7 +950,7 @@ Reveal.initialize({
 	document.getElementsByTagName( 'head' )[0].appendChild( link );
 </script>
 ```
-### 导出操作步骤
+### 步骤
 
 1. 给演示文稿的 URL 加上 `print-pdf` 参数，如：http://localhost:8000/?print-pdf#/ ，可以尝试这个例子 [lab.hakim.se/reveal-js?print-pdf](http://lab.hakim.se/reveal-js?print-pdf)。
 2. 打开浏览器的打印面板 (CTRL/CMD+P)。
