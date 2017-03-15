@@ -303,7 +303,6 @@ Reveal.initialize({
     // - 当设置为 0 时，则禁止视差动画
     parallaxBackgroundHorizontal: null,
     parallaxBackgroundVertical: null
-
 });
 ```
 
@@ -933,13 +932,27 @@ Reveal.initialize({
 
 ## 导出 PDF
 
-当演示文稿在 [Google Chrome](http://google.com/chrome) 或 [Chromium](https://www.chromium.org/Home) 上打开、且运行于 web 服务器上时，可以导出为 PDF。
+演示文稿可以通过一个特殊的打印样式来导出 PDF。该特性需要使用 [Google Chrome](http://google.com/chrome) 或 [Chromium](https://www.chromium.org/Home)、且运行于 web 服务器上时，可以导出为 PDF。
 这是一个演示文稿导出 PDF 并上传到 SlideShare 的例子：http://www.slideshare.net/hakimel/revealjs-300。
 
-导出的 PDF 尺寸由 [演示文稿尺寸](#演示文稿尺寸) 决定，如果幻灯片太高无法一页展示完，则会切分为多页，可通过 `pdfMaxPagesPerSlide` 配置项设置每张幻灯片可被切分的最大页数，如 `Reveal.configure({ pdfMaxPagesPerSlide: 1 })` 可确保幻灯片不会被切分。
+### 页面尺寸
+导出的 PDF 尺寸由 [演示文稿尺寸](#演示文稿尺寸) 决定，如果幻灯片太高无法一页展示完，则会切分为多页，可通过 `pdfMaxPagesPerSlide` 配置项设置每张幻灯片最多可被切分为几数，如 `Reveal.configure({ pdfMaxPagesPerSlide: 1 })` 可确保幻灯片不会被切分。
 
-1. 给演示文稿的 URL 加上 `print-pdf` 参数，如：http://localhost:8000/?print-pdf#/，页面会自动加载导出 PDF 所需的样式 ([css/print/pdf.css](https://github.com/hellobugme/reveal.js/blob/master/css/print/pdf.css))。
-可以尝试这个例子 [lab.hakim.se/reveal-js?print-pdf](http://lab.hakim.se/reveal-js?print-pdf)。
+### 打印样式
+想要启用演示文稿的打印功能，需要加载一个用于打印的特殊样式 [/css/print/pdf.css](https://github.com/hakimel/reveal.js/blob/master/css/print/pdf.css)，默认的 index.html 文件已包含该逻辑，只要演示文稿的链接中带有 `print-pdf` 参数，就会自动加载。如果使用的是其它的 HTML 模板，可以在 HEAD 中插入以下代码：
+
+```html
+<script>
+	var link = document.createElement( 'link' );
+	link.rel = 'stylesheet';
+	link.type = 'text/css';
+	link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+	document.getElementsByTagName( 'head' )[0].appendChild( link );
+</script>
+```
+### 导出操作步骤
+
+1. 给演示文稿的 URL 加上 `print-pdf` 参数，如：http://localhost:8000/?print-pdf#/ ，可以尝试这个例子 [lab.hakim.se/reveal-js?print-pdf](http://lab.hakim.se/reveal-js?print-pdf)。
 2. 打开浏览器的打印面板 (CTRL/CMD+P)。
 3. **Destination（目标打印机）** 修改为 **Save as PDF（另存为 PDF）**。
 4. **Layout（布局）** 修改为 **Landscape（横向）**。
@@ -1015,7 +1028,7 @@ Note:
 
 备注只对演讲者可见，如果想让其他人也能看到，可以在初始化 reveal.js 时，把 `showNotes` 配置项设为 `true`，则备注会显示在演示文稿的底部。
 
-如果启用了 `showNotes`，在 [导出 PDF](#pdf-export) 时也会包含备注。
+如果启用了 `showNotes`，在 [导出 PDF](#导出-pdf) 时也会包含备注。
 备注默认打印在一个半透明的浮窗中，覆盖于幻灯片底部，如果想在该幻灯片后面单独新建一页打印备注，可以把 `showNotes` 设置为 `"separate-page"`。
 
 ## 服务器端演讲备注
