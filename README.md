@@ -8,7 +8,7 @@ reveal.js 的主要特性：
 
 + [通过标签划分幻灯片](https://github.com/hellobugme/reveal.js.zh-CN#标记)
 + [支持 Markdown 编写内容](https://github.com/hellobugme/reveal.js.zh-CN#markdown)
-+ [支持 PDF 导出](https://github.com/hellobugme/reveal.js.zh-CN#导出-PDF)
++ [支持 PDF 导出](https://github.com/hellobugme/reveal.js.zh-CN#导出-pdf)
 + [支持演讲备注](https://github.com/hellobugme/reveal.js.zh-CN#演讲备注)
 + [提供 JavaScript API](https://github.com/hellobugme/reveal.js.zh-CN#api)
 
