@@ -1,0 +1,14 @@
+.reveal pre {
+    max-height: 400px;
+}
+
+.reveal pre code {
+    overflow: visible;
+    display: inline;
+    padding: 3px;
+}
+
+.line-highlight {
+    margin-top: 1em !important;
+    background: linear-gradient(to right, rgba(255, 255, 255, .06) 70%, rgba(255, 255, 255, 0)) !important;
+}
